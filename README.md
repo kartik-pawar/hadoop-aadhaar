@@ -1,7 +1,5 @@
 # hadoop-aadhaar
 Bigdata application to query on Aadhaar Dataset using Hadoop MapReduce and Hive
-
-
 Aadhaar Data Analysis using Hadoop/Spark
 Background
 Aadhaar card is a 12-digit unique identification number provided to each Indian resident. Till date 1.19 billion members are enrolled under Aadhaar as of 30 Nov 2017. To analyze and understand the activity occurring on such a massive scale, a relational SQL database is not enough. Such kind of data is well suited to a massively parallel and distributed system like Hadoop. 
@@ -38,21 +36,6 @@ Benefits using cloud are:
 •	Security/firewall and maintenance managed by Amazon EMR
 
 The output generated will be represented using a frontend technology.
-
-DataFlow 
-This dataflow is for MapReduce Vs Hive. Same can be drawn for Spark as well.
-
-
-
-
-
-
-
-
-
-
-
-
 
 Sample reports
 •	Count the number of Identities generated in each state
