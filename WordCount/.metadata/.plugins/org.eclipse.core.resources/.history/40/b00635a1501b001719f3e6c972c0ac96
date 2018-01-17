@@ -1,0 +1,30 @@
+package com.psl.WordCount;
+
+import java.io.IOException;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class WordCount extends Mapper<Object, org.apache.hadoop.io.Text, org.apache.hadoop.io.Text, org.apache.hadoop.io.IntWritable> {
+
+	@Override
+	protected void map(Object key, Text value, Mapper<Object, Text, Text, IntWritable>.Context context)
+		throws IOException, InterruptedException {
+	}
+	
+	
+}
+
+
+// Key, Value
+//0, 3 machines ---- highly configured
+// 101, 1. namenode --- metadata RAM
+
+
+//String  Text
+//Int		IntWritable
+//Byte	ByteWritable
+//long	LongWritable
+
+

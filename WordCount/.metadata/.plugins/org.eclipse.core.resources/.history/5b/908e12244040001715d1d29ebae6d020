@@ -1,0 +1,33 @@
+package com.psl.WordCount;
+
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class mapper extends Mapper<Object, Text, Text, IntWritable> {
+	
+	private final static Text word = new Text();
+	
+	// 0, This is hadoop training
+	// 51, this is final day
+	// 81, SLT is on 2nd June
+	@Override
+	protected void map(Object key, Text value, Context context)
+			throws IOException, InterruptedException {
+		
+		StringTokenizer tokens = new StringTokenizer(value.toString());
+		
+		while(tokens.hasMoreElements()){
+			word.set(tokens.nextToken());
+			context.write(word, 1);
+		}	
+		
+		
+	}
+	
+	
+
+}

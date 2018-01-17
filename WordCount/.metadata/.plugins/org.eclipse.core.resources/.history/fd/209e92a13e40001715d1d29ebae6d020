@@ -1,0 +1,7 @@
+package com.psl.WordCount;
+
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class mapper extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
+
+}

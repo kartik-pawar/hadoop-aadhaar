@@ -1,0 +1,20 @@
+package com.psl.WordCount;
+
+import org.apache.hadoop.mapreduce.Mapper;
+
+public class WordCount extends Mapper<Object, Text, Text, org.apache.hadoop.io.IntWritable> {
+
+}
+
+
+// Key, Value
+//0, 3 machines ---- highly configured
+// 101, 1. namenode --- metadata RAM
+
+
+String  Text
+Int		IntWritable
+Byte	ByteWritable
+long	LongWritable
+
+
