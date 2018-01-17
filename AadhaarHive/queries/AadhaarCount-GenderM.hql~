@@ -1,0 +1,5 @@
+SELECT state, COUNT(*) AS c
+FROM aadhaardata 
+WHERE gender="M" 
+GROUP BY state 
+ORDER BY c DESC LIMIT 10;
