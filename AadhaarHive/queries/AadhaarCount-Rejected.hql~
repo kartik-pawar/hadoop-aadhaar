@@ -18,4 +18,3 @@ GROUP BY state;
 
 SELECT unix_timestamp(current_timestamp);
 
-
