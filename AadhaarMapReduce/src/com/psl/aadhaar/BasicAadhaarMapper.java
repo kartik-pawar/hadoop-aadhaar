@@ -9,7 +9,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper; 
 
 
-public class AadhaarMapper extends Mapper<Object, Text, Text, IntWritable>{
+public class BasicAadhaarMapper extends Mapper<Object, Text, Text, IntWritable>{
 
 	private Text word = new Text();
     private final static IntWritable one = new IntWritable(1);
@@ -25,32 +25,15 @@ public class AadhaarMapper extends Mapper<Object, Text, Text, IntWritable>{
                     ) throws IOException, InterruptedException {
     	
       StringTokenizer itr = new StringTokenizer(value.toString(),",");
-      String[] rowIdArray=row_id.split(",");
-      String state;
-      String rejectedIdentities;
-      
+
     	  int i=0;
-    	  while(i<Integer.parseInt(rowIdArray[1]))
+    	  while(i<Integer.parseInt(row_id))
     	  {
     		  i++;
-    		  itr.nextToken();  		  
+    		  itr.nextToken();
     	  }
-    	  state=itr.nextToken();
-    	  
-    	  do
-    	  {
-    		  i++;
-    		  itr.nextToken();  
-    	  }while(i<Integer.parseInt(rowIdArray[0]));
-    		  
-    	  rejectedIdentities=itr.nextToken();
-    	  
-    	  if(Integer.parseInt(rejectedIdentities)>0)
-    	  {
-    		  word.set(state);    	  
-        	  context.write(word, one);
-    	  }
-    	  
+    	  word.set(itr.nextToken());
+    	  context.write(word, one);
     
     }
 
