@@ -39,7 +39,7 @@ public class AadhaarMain extends Configured implements Tool{
 							break;
 										
 			case "byAge" : num="8";
-							job.setMapperClass(BasicAadhaarMapper.class);
+							job.setMapperClass(AadhaarMapperForAge.class);
 							job.setReducerClass(AadhaarReducer.class);
 							break;
 							
@@ -58,8 +58,10 @@ public class AadhaarMain extends Configured implements Tool{
 							job.setReducerClass(AadhaarReducer.class);
 							break;
 							
-			/*case "MobileNumberOrEmailIdByStateAndAge" : num="11 12 3 8";
-							break;*/
+			case "MobileNumberOrEmailIdByStateAndAge" : num="11,12,8";
+							job.setMapperClass(AadhaarMapperLastQuery.class);
+							job.setReducerClass(AadhaarReducer.class);
+							break;
 			}
 			
 			
