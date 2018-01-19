@@ -1,0 +1,25 @@
+from bottle import route, run, template
+import subprocesss
+
+@route('/hive/<action>')
+def hive(action):
+	hive = "$HIVE_HOME/bin/hive -f /home/shweta/Documents/aadhaar-project/hadoop-aadhaar/AadhaarHive/queries/AadhaarCount-"+action+".hql > /home/shweta/Documents/aadhaar-project/hadoop-aadhaar/Outputs/Hive/"+action+".out"
+	s=subprocess.Popen(hive, stdout=subprocess.PIPE, shell=True)
+	s.wait()
+	f=open("/home/shweta/Documents/aadhaar-project/hadoop-aadhaar/Outputs/Hive/"+action+".out")
+	data=f.read()
+	return template(data)
+
+@route('/hello/<name>')
+def df(name):
+    return template('<b>Hello {{name}}</b>!', name=name)
+
+
+run(host='localhost', port=8080)
+
+
+
+
+
+
+

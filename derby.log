@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Thu Jan 18 20:33:07 IST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0161-09cb-7f68-00000273c478 
+Fri Jan 19 14:05:13 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0161-0d8e-b6eb-0000026d01b0 
 on database directory /home/shweta/apache-hive-2.1.1-bin/metastore/metastore_db with class loader sun.misc.Launcher$AppClassLoader@234f79cb 
 Loaded from file:/home/shweta/apache-hive-2.1.1-bin/lib/derby-10.10.2.0.jar
 java.vendor=Oracle Corporation
