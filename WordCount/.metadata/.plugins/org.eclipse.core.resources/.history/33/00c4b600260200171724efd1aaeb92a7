@@ -1,7 +1,0 @@
-package com.psl.WordCount;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class WordCountReducer extends Reducer<Text, IntWritable, KEYOUT, VALUEOUT> {
-
-}

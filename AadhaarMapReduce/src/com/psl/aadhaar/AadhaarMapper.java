@@ -30,7 +30,7 @@ public class AadhaarMapper extends Mapper<Object, Text, Text, IntWritable>{
       String rejectedIdentities;
       
     	  int i=0;
-    	  while(i<Integer.parseInt(rowIdArray[1]))
+    	  while(i<Integer.parseInt(rowIdArray[1])-1)
     	  {
     		  i++;
     		  itr.nextToken();  		  
@@ -41,7 +41,7 @@ public class AadhaarMapper extends Mapper<Object, Text, Text, IntWritable>{
     	  {
     		  i++;
     		  itr.nextToken();  
-    	  }while(i<Integer.parseInt(rowIdArray[0]));
+    	  }while(i<Integer.parseInt(rowIdArray[0])-2);
     		  
     	  rejectedIdentities=itr.nextToken();
     	  
