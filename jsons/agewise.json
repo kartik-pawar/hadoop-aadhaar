@@ -1,0 +1,40 @@
+{
+	"data": [{
+			"AgeRange": "NULL",
+			"Count": 20
+		},
+		{
+			"AgeRange": "0-10",
+			"Count": 589981
+		},
+		{
+			"AgeRange": "10-20",
+			"Count": 151560
+		},
+		{
+			"AgeRange": "20-30",
+			"Count": 152797
+		},
+		{
+			"AgeRange": "30-40",
+			"Count": 95311
+		},
+		{
+			"AgeRange": "40-50",
+			"Count": 56703
+		},
+		{
+			"AgeRange": "50-60",
+			"Count": 37972
+		},
+		{
+			"AgeRange": "60",
+			"Count": 49722
+		}
+	],
+	"time": {
+		"mr": 345,
+		"hive": 343,
+		"spark": 454
+	}
+}

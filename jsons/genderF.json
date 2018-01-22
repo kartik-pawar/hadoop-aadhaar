@@ -1,0 +1,48 @@
+{
+	"data": [{
+			"District": "Dakshin Dinajpur",
+			"Count": 694
+		},
+		{
+			"District": "Thiruvananthapuram",
+			"Count": 1371
+		},
+		{
+			"District": "Cooch Behar",
+			"Count": 1133
+		},
+		{
+			"District": "Hyderabad",
+			"Count": 2192
+		},
+		{
+			"District": "East Singhbhum",
+			"Count": 827
+		},
+		{
+			"District": "Rae Bareli",
+			"Count": 1151
+		},
+		{
+			"District": "Sukma",
+			"Count": 58
+		},
+		{
+			"District": "Lucknow",
+			"Count": 3846
+		},
+		{
+			"District": "Jalpaiguri",
+			"Count": 2003
+		},
+		{
+			"District": "Mamit",
+			"Count": 233
+		}
+	],
+	"time": {
+		"mr": 345,
+		"hive": 343,
+		"spark": 454
+	}
+}

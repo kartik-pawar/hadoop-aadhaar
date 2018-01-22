@@ -1,0 +1,156 @@
+{
+	"data": [{
+			"State": "Andaman and Nicobar Islands",
+			"Count": 757
+		},
+		{
+			"State": "Andhra Pradesh",
+			"Count": 22283
+		},
+		{
+			"State": "Arunachal Pradesh",
+			"Count": 6084
+		},
+		{
+			"State": "Assam",
+			"Count": 19338
+		},
+		{
+			"State": "Bihar",
+			"Count": 136048
+		},
+		{
+			"State": "Chandigarh",
+			"Count": 1471
+		},
+		{
+			"State": "Chhattisgarh",
+			"Count": 12890
+		},
+		{
+			"State": "Dadra and Nagar Haveli",
+			"Count": 346
+		},
+		{
+			"State": "Daman and Diu",
+			"Count": 286
+		},
+		{
+			"State": "Delhi",
+			"Count": 11488
+		},
+		{
+			"State": "Goa",
+			"Count": 1286
+		},
+		{
+			"State": "Gujarat",
+			"Count": 73558
+		},
+		{
+			"State": "Haryana",
+			"Count": 9842
+		},
+		{
+			"State": "Himachal Pradesh",
+			"Count": 3220
+		},
+		{
+			"State": "Jammu and Kashmir",
+			"Count": 33295
+		},
+		{
+			"State": "Jharkhand",
+			"Count": 16996
+		},
+		{
+			"State": "Karnataka",
+			"Count": 67647
+		},
+		{
+			"State": "Kerala",
+			"Count": 47864
+		},
+		{
+			"State": "Lakshadweep",
+			"Count": 103
+		},
+		{
+			"State": "Madhya Pradesh",
+			"Count": 48075
+		},
+		{
+			"State": "Maharashtra",
+			"Count": 83684
+		},
+		{
+			"State": "Manipur",
+			"Count": 8237
+		},
+		{
+			"State": "Meghalaya",
+			"Count": 17561
+		},
+		{
+			"State": "Mizoram",
+			"Count": 4386
+		},
+		{
+			"State": "Nagaland",
+			"Count": 2967
+		},
+		{
+			"State": "Odisha",
+			"Count": 42105
+		},
+		{
+			"State": "Others",
+			"Count": 433
+		},
+		{
+			"State": "Puducherry",
+			"Count": 768
+		},
+		{
+			"State": "Punjab",
+			"Count": 25918
+		},
+		{
+			"State": "Rajasthan",
+			"Count": 72175
+		},
+		{
+			"State": "Sikkim",
+			"Count": 226
+		},
+		{
+			"State": "Tamil Nadu",
+			"Count": 72046
+		},
+		{
+			"State": "Telangana",
+			"Count": 17706
+		},
+		{
+			"State": "Tripura",
+			"Count": 2402
+		},
+		{
+			"State": "Uttar Pradesh",
+			"Count": 186166
+		},
+		{
+			"State": "Uttarakhand",
+			"Count": 3777
+		},
+		{
+			"State": "West Bengal",
+			"Count": 80631
+		}
+	],
+	"time": {
+		"mr": 345,
+		"hive": 343,
+		"spark": 454
+	}
+}
