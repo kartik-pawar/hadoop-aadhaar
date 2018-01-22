@@ -21,7 +21,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="table.html">
+                    <a href="agewise.php">
+                        <i class="pe-7s-map-marker"></i>
+                        <p>IDs by Age</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="enrollmentagencies.php">
                         <i class="pe-7s-note2"></i>
                         <p>Ids by Enrollment Agencies</p>
                     </a>
@@ -38,12 +44,7 @@
                         <p>Rejected IDs</p>
                     </a>
                 </li>
-                <li>
-                    <a href="agewise.php">
-                        <i class="pe-7s-map-marker"></i>
-                        <p>IDs by Age</p>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="notifications.html">
                         <i class="pe-7s-bell"></i>

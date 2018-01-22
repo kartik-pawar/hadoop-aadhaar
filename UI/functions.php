@@ -15,6 +15,9 @@ if(isset($_POST["func"]) && !empty($_POST["func"])){
 		case 'agewisecount':
         ageWiseCount();
         break;
+		case 'enrollmentagenciescount':
+        enrollmentAgenciesCount();
+        break;
     default:
 		$response = array("error" => TRUE);
 		$response["error_msg"] = "Function name not defined.";
@@ -77,7 +80,18 @@ function ageWiseCount(){
 }
 //*********************************************************************//
 //*********************************************************************//
+function enrollmentAgenciesCount(){
 
+    //sleep(2);
+    $results = enrollmentAgencies();
+
+	$response = array("error" => FALSE);
+	
+    $response["enrollmentAgencies"] = $results;
+	
+	echo json_encode($response);
+
+}
 //*********************************************************************//
 //*********************************************************************//
 
