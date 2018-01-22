@@ -15,7 +15,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user.html">
+                    <a href="statewise.php">
                         <i class="pe-7s-user"></i>
                         <p>Statewise IDs</p>
                     </a>
@@ -39,14 +39,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="icons.html">
+                    <a href="rejected.php">
                         <i class="pe-7s-science"></i>
                         <p>Rejected IDs</p>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="notifications.html">
+                    <a href="#">
                         <i class="pe-7s-bell"></i>
                         <p>Misc</p>
                     </a>

@@ -28,52 +28,44 @@ include 'pages/nav.php';
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="card">
+                        
 
                             <div class="header">
                                 <h4 class="title">Registrations for different age groups</h4>
                                 <p class="category"></p>
                             </div>
-                            <div class="content">
+                            <div class="content table-responsive table-full-width">
                                 <!-- chart here -->
                                 <!-- <div class="col-md-12" align="center"> <img id="wait" class="" src="assets/img/waiting.gif"/></div> -->
-                                <div class="table-responsive table-full-width">
-                                <table id="myTable" class="table table-hover table-striped">
+                               
+                                <table id="myTable" class="table table-hover table-striped table-bordered table-full-width">
                                     <thead>
                                         
                                         <th>Agency Name</th>
                                         <th>Total Registrations</th>
                                     </thead>
                                     </table>
-                                    </div>
 
                             <script> 
                             $(document).ready(function() {
                                 
-                                     $.ajax({
-                                    url: 'Data/EnrollAgency.json',
-                                    data: {func: "enrollmentagenciescount"}
-                                })
-                                .done(function(data){
-                                    console.log(data);
-                                });
-
-
-
                                 $('#myTable').DataTable( {
                                     
-                                    "ajax" : {
-                                        "url" : "Data/EnrollAgency.json",
-                                        "dataSrc": "enrollmentAgencies"
-
-                                    },
+                                    "ajax" :"../jsons/EnrollmentAgencies.json",
                                     "columns" : [
-                                            { "data": "agencyName" },
-                                            { "data": "count" }
+                                            { "data": "Agency" },
+                                            { "data": "Count" }
                                             ]
                                 } );
 
-                                 
+                                  $.ajax({
+                                    url: '../jsons/EnrollmentAgencies.json',
+                                })
+                                .done(function(data){
+                                    console.log(data.time);
+                                    $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+
+                                });
                             });
                                 
                                   
@@ -90,18 +82,17 @@ include 'pages/nav.php';
                                     <div class="stats">Processing time
                                     </div>
                                     <hr>
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-warning"></i> Hive took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-success"></i> Spark took <strong>89904</strong> ms to process
+                                    <div class="legend" id="time">
+                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong>LOADING</strong> ms to process<br>
+                                        <i class="fa fa-circle text-warning"></i> Hive took <strong>LOADING</strong> ms to process<br>
+                                        <i class="fa fa-circle text-success"></i> Spark took <strong>LOADING</strong> ms to process
                                     </div>
                                     
                                     
                                 </div>
                             </div>
 
-                            
-                        </div>
+                       
                     
 
                 </div>
