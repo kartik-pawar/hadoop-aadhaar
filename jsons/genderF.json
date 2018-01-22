@@ -1,43 +1,43 @@
 [{
 	"data": [{
-			"State": "Uttar Pradesh",
-			"Count": 91364
+			"District": "Dakshin Dinajpur",
+			"Count": 694
 		},
 		{
-			"State": "Bihar",
-			"Count": 59036
+			"District": "Thiruvananthapuram",
+			"Count": 1371
 		},
 		{
-			"State": "Tamil Nadu",
-			"Count": 40395
+			"District": "Cooch Behar",
+			"Count": 1133
 		},
 		{
-			"State": "Maharashtra",
-			"Count": 38000
+			"District": "Hyderabad",
+			"Count": 2192
 		},
 		{
-			"State": "Gujarat",
-			"Count": 37275
+			"District": "East Singhbhum",
+			"Count": 827
 		},
 		{
-			"State": "West Bengal",
-			"Count": 35028
+			"District": "Rae Bareli",
+			"Count": 1151
 		},
 		{
-			"State": "Karnataka",
-			"Count": 34415
+			"District": "Sukma",
+			"Count": 58
 		},
 		{
-			"State": "Rajasthan",
-			"Count": 33800
+			"District": "Lucknow",
+			"Count": 3846
 		},
 		{
-			"State": "Kerala",
-			"Count": 32653
+			"District": "Jalpaiguri",
+			"Count": 2003
 		},
 		{
-			"State": "Odisha",
-			"Count": 20755
+			"District": "Mamit",
+			"Count": 233
 		}
 	],
 	"time": {
