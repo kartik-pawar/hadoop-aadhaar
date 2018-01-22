@@ -33,9 +33,9 @@ def ByGenderF(outputPath):
 	femaleP = pairs.filter(lambda x:x[0][1]=='F')
 	femaleP = femaleP.groupByKey().mapValues(sum).take(10)
 	eTime = time.time()
-	with open(outputPath, "w") as myfile:
+	with open(outputPath, "w+") as myfile:
 		myfile.write('\n'+str(sTime))
-	with open(outputPath,"w") as fp:
+	with open(outputPath,"a") as fp:
 		fp.write('\n'.join('%s,%s' % x for x in femaleP))
 	with open(outputPath, "a") as myfile:
 		myfile.write('\n'+str(eTime))
@@ -114,7 +114,7 @@ elif(action=="genderM"):
 	ByGenderM(output)
 elif(action=="stateRej"):
 	ByStateRej(output)
-elif(action="ageG"):
+elif(action=="ageG"):
 	ByAge(output)
-elif(action=="stateAgeEmail")
+elif(action=="stateAgeEmail"):
 	ByStateAgeE(output)

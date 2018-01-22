@@ -8,7 +8,7 @@ def df(action):
 	s.wait()
 	f=open("/home/shweta/Documents/aadhaar-project/hadoop-aadhaar/Outputs/Spark/"+action+".csv")
 	data=f.read()
-	return data
+	return template(data)
 
 run(host='localhost', port=8081)
 

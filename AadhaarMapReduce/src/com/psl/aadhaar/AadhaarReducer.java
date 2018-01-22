@@ -4,7 +4,8 @@ import java.io.IOException;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Reducer; 
+import org.apache.hadoop.mapreduce.Reducer;
+import org.json.JSONObject; 
 
 public class AadhaarReducer extends Reducer<Text,IntWritable,Text,IntWritable>{
 	
@@ -17,6 +18,10 @@ public class AadhaarReducer extends Reducer<Text,IntWritable,Text,IntWritable>{
         sum += val.get();
       }
       result.set(sum);
-      context.write(key, result);
+      
+      JSONObject json = new JSONObject();
+      json.put("State",key);
+      json.put("count", result);
+      context.write(new Text(json.toString()), result);
     }
   }
