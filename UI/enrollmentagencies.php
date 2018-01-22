@@ -62,9 +62,11 @@ include 'pages/nav.php';
                                     url: '../jsons/Agency.json',
                                 })
                                 .done(function(data){
+                                    data= JSON.parse(data);
                                     console.log(data.time);
                                     $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
 
+                                    
                                 });
                             });
                                 

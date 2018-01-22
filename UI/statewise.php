@@ -51,13 +51,14 @@ include 'pages/nav.php';
                                     }
                                 })
                                 .done(function(data){
-                                   
+                                   data= JSON.parse(data);
                                     $('#wait').hide();
                                     
                                      for (var key in data.data) {
                                             
                                              states.push(data.data[key].State);
                                              enrollcount.push(data.data[key].Count);
+                                             
                                         }
 
                               
