@@ -1,5 +1,8 @@
-[
-	"data": {
+[{
+	"data": [{
+			"State": "Andaman and Nicobar Islands",
+			"RejCount": 120
+		},
 		{
 			"State": "Andhra Pradesh",
 			"RejCount": 4035
@@ -144,10 +147,10 @@
 			"State": "West Bengal",
 			"RejCount": 16476
 		}
-	}
-
+	],
 	"time": {
-		"mr": 123 "hive": 456 "spark": 345
+		"mr": 345,
+		"hive": 343,
+		"spark": 454
 	}
-
-]
+}]
