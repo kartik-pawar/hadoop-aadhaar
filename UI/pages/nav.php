@@ -46,7 +46,7 @@
                 </li>
                 
                 <li>
-                    <a href="#">
+                    <a href="misc.php">
                         <i class="pe-7s-bell"></i>
                         <p>Misc</p>
                     </a>
