@@ -32,4 +32,20 @@ function topTenFemale(){
     return $result;
 }
 
+function ageWise(){
+    $target_file = "Data/AgeWise.csv";
+    $file = fopen($target_file,"r");
+    $group = array();
+    $count = array();
+    while(! feof($file)){
+        $feeds = fgetcsv($file);
+        array_push($group, $feeds[0]);
+        array_push($count, $feeds[1]);
+    }
+    $result = array();
+    for($i=0; $i<count($group); $i++){
+        $result["ageGroup".$i]= array("ageGroup" => $group[$i], "count" => $count[$i]);
+    }
+    return $result;
+}
 ?>
