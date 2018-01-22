@@ -9,7 +9,7 @@ LINES TERMINATED BY '\n'
 LOCATION '/AadhaarData';
 
 SELECT state, COUNT(*) AS c
-FROM aadhaardata 
+FROM aadhaardb.aadhaardata 
 WHERE gender="M" 
 GROUP BY state 
 ORDER BY c DESC LIMIT 10;

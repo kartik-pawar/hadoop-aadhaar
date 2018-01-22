@@ -11,7 +11,7 @@ LOCATION '/AadhaarData';
 SELECT state, COUNT(*) AS c
 FROM aadhaardb.aadhaardata 
 WHERE gender="M" 
-GROUP BY state 
+GROUP BY district 
 ORDER BY c DESC LIMIT 10;
 
 SELECT unix_timestamp(current_timestamp);
