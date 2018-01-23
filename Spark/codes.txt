@@ -1,0 +1,81 @@
+--1st Query
+
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+pairs = tF.map(lambda x:(x.split(",")[2],int(x.split(",")[8])))
+pairs.groupByKey().mapValues(sum).collect()
+
+
+--2nd Query
+
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+pairs1 = tF.map(lambda x:(x.split(",")[1],int(x.split(",")[8])))
+pairs1.groupByKey().mapValues(sum).count()
+
+--3rd Query(1st part)
+import pyspark
+sc = pyspark.SparkContext()
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+pairs = tF.map(lambda x:(x.split(",")[3],x.split(",")[6]))
+pairs = pairs.map(lambda x:(x,1))
+maleP = pairs.filter(lambda x:x[0][1]=='M')
+maleP = maleP.groupByKey().mapValues(sum).collect()
+maleP = sorted(maleP,key=lambda x:-x[1])[:10]
+with open("Male per district.csv","w") as fp:
+	fp.write('\n'.join('%s,%s' % x for x in maleP))
+
+--3rd Query(2nd part)
+import pyspark
+sc = pyspark.SparkContext()
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+pairs = tF.map(lambda x:(x.split(",")[3],x.split(",")[6]))
+pairs = pairs.map(lambda x:(x,1))
+femaleP = pairs.filter(lambda x:x[0][1]=='F')
+femaleP = femaleP.groupByKey().mapValues(sum).collect()
+femaleP = sorted(femaleP,key=lambda x:-x[1])[:10]
+with open("Female per district.csv","w") as fp:
+	fp.write('\n'.join('%s,%s' % x for x in femaleP))
+
+--4th Query
+import pyspark
+sc = pyspark.SparkContext()
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+pairs = tF.map(lambda x:(x.split(",")[2],int(x.split(",")[9])))
+sReject = pairs.filter(lambda x:x[1]==1)
+sReject = sReject.groupByKey().mapValues(sum).collect()
+with open("Rejected per state.csv","w") as fp:
+	fp.write('\n'.join('%s,%s' % x for x in sReject))
+
+--5th Query
+import pyspark
+sc = pyspark.SparkContext()
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+
+
+pairs = tF.map(lambda x:('NULL' if (x.split(",")[7])=='NULL' else ('0-10' if int(x.split(",")[7])<=10 else ('10-20' if int(x.split(",")[7])<=20 else ('20-30' if int(x.split(",")[7])<=30 else ('30-40' if int(x.split(",")[7])<=40 else ('40-50' if int(x.split(",")[7])<=50 else ('50-60' if int(x.split(",")[7])<=60 else ('60+' if int(x.split(",")[7])>60 else '')))))))  ,1))
+
+
+
+pairs = pairs.groupByKey().mapValues(sum).collect()
+with open("Age-Wise.csv","w") as fp:
+	fp.write('\n'.join('%s,%s' % x for x in pairs))
+
+--6th Query
+import pyspark
+sc = pyspark.SparkContext()
+tF = sc.textFile("hdfs://localhost:9000/AadharData/*.csv")
+
+
+pairs = tF.map(lambda x:((x.split(",")[2],('NULL' if (x.split(",")[7])=='NULL' else ('0-10' if int(x.split(",")[7])<=10 else ('10-20' if int(x.split(",")[7])<=20 else ('20-30' if int(x.split(",")[7])<=30 else ('30-40' if int(x.split(",")[7])<=40 else ('40-50' if int(x.split(",")[7])<=50 else ('50-60' if int(x.split(",")[7])<=60 else ('60+' if int(x.split(",")[7])>60 else ''))))))) )),(1 if (x.split(",")[10]=='1' or x.split(",")[11]=='1') else 0)))
+
+
+pairs = pairs.groupByKey().mapValues(sum).collect()
+
+with open("Final Query.csv","w") as fp:
+	fp.write('\n'.join('%s,%s' % x for x in pairs))
+
+
+--Saving data to file
+
+with open("sampleOutput1.txt","w") as fp:
+fp.write('\n'.join('%s %s' % x for x in maleP))
+
