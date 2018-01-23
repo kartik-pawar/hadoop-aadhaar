@@ -1,0 +1,90 @@
+{
+    "data":[
+        {
+            "state" : "bleh",
+            "agerange" : [
+                {
+                    "range" : "0-10",
+                    "count" : 670 
+                },
+                {
+                    "range" : "10-20",
+                    "count" : 898 
+                },
+                {
+                    "range" : "20-30",
+                    "count" : 456
+                }
+            ]
+        },
+        {
+            "state": "bleh2",
+            "agerange": [
+                {
+                    "range": "0-10",
+                    "count": 627
+                },
+                {
+                    "range": "10-20",
+                    "count": 189
+                },
+                {
+                    "range": "20-30",
+                    "count": 345
+                }
+            ]
+        },
+        {
+            "state" : "bleh3",
+            "agerange" : [
+                {
+                    "range" : "0-10",
+                    "count" : 67 
+                },
+                {
+                    "range" : "10-20",
+                    "count" : 89 
+                },
+                {
+                    "range" : "20-30",
+                    "count" : 45 
+                },
+                {
+                    "range": "30-40",
+                    "count": 78
+                }
+            ]
+        },
+        {
+            "state": "bleh4",
+            "agerange": [
+                {
+                    "range": "0-10",
+                    "count": 67
+                },
+                {
+                    "range": "10-20",
+                    "count": 89
+                },
+                {
+                    "range": "20-30",
+                    "count": 45
+                },
+                {
+                    "range": "20-30",
+                    "count": 45
+                },
+                {
+                    "range": "20-30",
+                    "count": 45
+                }
+            ]
+        }
+
+    ],
+    "time":{
+        "mr": 345,
+        "hive": 767,
+        "spark": 89
+    }
+}
