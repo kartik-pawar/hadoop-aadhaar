@@ -18,6 +18,9 @@ if(isset($_POST["func"]) && !empty($_POST["func"])){
 		case 'enrollmentagenciescount':
         enrollmentAgenciesCount();
         break;
+        case 'streaming':
+        streaming();
+        break;
     default:
 		$response = array("error" => TRUE);
 		$response["error_msg"] = "Function name not defined.";
@@ -95,6 +98,35 @@ function enrollmentAgenciesCount(){
 //*********************************************************************//
 //*********************************************************************//
 
+function streaming(){
+    $target_file = "../jsons/livedata.json";
+    echo file_get_contents($target_file);
+    //$json = array("State" => generateRandomString(7), "Count" => generateRandomNum(4));
+    $json2 = json_decode(file_get_contents("../jsons/state.json"), true);
+
+    $index = rand(0,36);
+
+    file_put_contents($target_file, json_encode($json2["data"][$index]));
+    
+}
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+function generateRandomNum($length = 10) {
+    $characters = '0123456789';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
 //*********************************************************************//
 //*********************************************************************//
 

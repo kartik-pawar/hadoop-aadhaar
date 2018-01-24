@@ -51,7 +51,12 @@
                         <p>Misc</p>
                     </a>
                 </li>
-				
+				<li>
+                    <a href="live.php">
+                        <i class="pe-7s-graph1"></i>
+                        <p>Live</p>
+                    </a>
+                </li>
             </ul>
     	</div>
 </div>
