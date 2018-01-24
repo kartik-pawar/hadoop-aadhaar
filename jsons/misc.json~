@@ -34,14 +34,14 @@
             ]
         },
         {
-
+            
             "state" : "Andhra Pradesh",
             "agerange" : [
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },                
-		{
+                {
                     "range" : "0-10",
                     "count" : 18767 
                 },
@@ -70,13 +70,13 @@
                     "count" : 442
                 }
             ]
-        
+            
         },
         {
-
+            
             "state" : "Arunachal Pradesh",
             "agerange" : [                
-		{
+                {
                     "range" : "0-10",
                     "count" : 3307 
                 },
@@ -105,14 +105,14 @@
                     "count" : 291
                 }
             ]
-        
+            
         },
         {
-
+            
             "state" : "Assam",
             "agerange" : [  
-             
-		{
+                
+                {
                     "range" : "0-10",
                     "count" : 382 
                 },
@@ -141,17 +141,17 @@
                     "count" : 472
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Bihar",
             "agerange" : [ 
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },		
-		{
+                {
                     "range" : "0-10",
                     "count" : 75090 
                 },
@@ -180,13 +180,13 @@
                     "count" : 3382
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Chandigarh",
             "agerange" : [				
-		{
+                {
                     "range" : "0-10",
                     "count" : 913 
                 },
@@ -215,13 +215,13 @@
                     "count" : 71
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Chhattisgarh",
             "agerange" : [				
-		{
+                {
                     "range" : "0-10",
                     "count" : 9021 
                 },
@@ -250,13 +250,13 @@
                     "count" : 328
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Dadra and Nagar Haveli",
             "agerange" : [				
-		{
+                {
                     "range" : "0-10",
                     "count" : 226 
                 },
@@ -285,13 +285,13 @@
                     "count" : 5
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Daman and Diu",
             "agerange" : [
-		{
+                {
                     "range" : "0-10",
                     "count" : 156 
                 },
@@ -320,17 +320,17 @@
                     "count" : 17
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Delhi",
             "agerange" : [
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },	
-		{
+                {
                     "range" : "0-10",
                     "count" : 5879 
                 },
@@ -359,13 +359,13 @@
                     "count" : 470
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Goa",
             "agerange" : [
-		{
+                {
                     "range" : "0-10",
                     "count" : 540 
                 },
@@ -394,17 +394,17 @@
                     "count" : 119
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Gujarat",
             "agerange" : [
-		{
+                {
                     "range" : "NULL",
                     "count" : 540 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 28636 
                 },
@@ -433,13 +433,13 @@
                     "count" : 5391
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Haryana",
             "agerange" : [
-		{
+                {
                     "range" : "0-10",
                     "count" : 6209 
                 },
@@ -468,13 +468,13 @@
                     "count" : 440
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Himachal Pradesh",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 2412 
                 },
@@ -503,17 +503,17 @@
                     "count" : 73
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Jammu and Kashmir",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 12592 
                 },
@@ -542,13 +542,13 @@
                     "count" : 2556
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Jharkhand",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 12356 
                 },
@@ -577,13 +577,13 @@
                     "count" : 426
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Karnataka",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 35312 
                 },
@@ -612,17 +612,17 @@
                     "count" : 3075
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Kerala",
             "agerange" : [ 
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 23070 
                 },
@@ -651,13 +651,13 @@
                     "count" : 2120
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Lakshadweep",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 72 
                 },
@@ -682,17 +682,17 @@
                     "count" : 3
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Madhya Pradesh",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 3 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 23035 
                 },
@@ -721,17 +721,17 @@
                     "count" : 2413
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Maharashtra",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 2 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 42491 
                 },
@@ -760,13 +760,13 @@
                     "count" : 5061
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Manipur",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 4354 
                 },
@@ -795,17 +795,17 @@
                     "count" : 179
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Meghalaya",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 1576 
                 },
@@ -834,13 +834,13 @@
                     "count" : 1321
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Mizoram",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 1223 
                 },
@@ -869,13 +869,13 @@
                     "count" : 186
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Nagaland",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 893 
                 },
@@ -904,17 +904,17 @@
                     "count" : 125
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Odisha",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 28854 
                 },
@@ -943,13 +943,13 @@
                     "count" : 1447
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Others",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 63 
                 },
@@ -978,13 +978,13 @@
                     "count" : 29
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Puducherry",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 467 
                 },
@@ -1013,12 +1013,13 @@
                     "count" : 34
                 }
             ]
-        
-        },{
-
+            
+        },
+        {
+            
             "state" : "Punjab",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 14986 
                 },
@@ -1047,17 +1048,17 @@
                     "count" : 2111
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Rajasthan",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 1 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 44630 
                 },
@@ -1086,13 +1087,13 @@
                     "count" : 1234
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Sikkim",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 153 
                 },
@@ -1121,13 +1122,13 @@
                     "count" : 4
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Tamil Nadu",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 42336 
                 },
@@ -1156,13 +1157,13 @@
                     "count" : 2892
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Telangana",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 13029 
                 },
@@ -1191,13 +1192,13 @@
                     "count" : 395
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Tripura",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 1516 
                 },
@@ -1226,17 +1227,17 @@
                     "count" : 59
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Uttar Pradesh",
             "agerange" : [ 	
-		{
+                {
                     "range" : "NULL",
                     "count" : 5 
                 },
-		{
+                {
                     "range" : "0-10",
                     "count" : 92954 
                 },
@@ -1265,13 +1266,13 @@
                     "count" : 7053
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "Uttarakhand",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 1993 
                 },
@@ -1300,13 +1301,13 @@
                     "count" : 170
                 }
             ]
-        
+            
         },
-	{
-
+        {
+            
             "state" : "West Bengal",
             "agerange" : [ 	
-		{
+                {
                     "range" : "0-10",
                     "count" : 39995 
                 },
@@ -1335,11 +1336,12 @@
                     "count" : 5314
                 }
             ]
-        
+            
         }
+    ],
     "time":{
         "mr": 345,
         "hive": 767,
-        "spark": 89
+        "spark": 1566
     }
 }

@@ -55,7 +55,7 @@ include 'pages/nav.php';
                                     $('#wait').hide();
                                     
                                      for (var key in data.data) {
-						if(data.data[key].AgeRange==='NULL'){
+if(data.data[key].AgeRange==='NULL'){
                                                 data.data[key].AgeRange = 'Others';
                                              }
 					     if(data.data[key].AgeRange==='60'){

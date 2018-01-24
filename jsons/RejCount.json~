@@ -1,156 +1,156 @@
 {
 	"data": [{
 			"State": "Andaman and Nicobar Islands",
-			"Count": 757
+			"RejCount": 120
 		},
 		{
 			"State": "Andhra Pradesh",
-			"Count": 22283
+			"RejCount": 4035
 		},
 		{
 			"State": "Arunachal Pradesh",
-			"Count": 6084
+			"RejCount": 860
 		},
 		{
 			"State": "Assam",
-			"Count": 19338
+			"RejCount": 1167
 		},
 		{
 			"State": "Bihar",
-			"Count": 136048
+			"RejCount": 21749
 		},
 		{
 			"State": "Chandigarh",
-			"Count": 1471
+			"RejCount": 208
 		},
 		{
 			"State": "Chhattisgarh",
-			"Count": 12890
+			"RejCount": 2314
 		},
 		{
 			"State": "Dadra and Nagar Haveli",
-			"Count": 346
+			"RejCount": 85
 		},
 		{
 			"State": "Daman and Diu",
-			"Count": 286
+			"RejCount": 41
 		},
 		{
 			"State": "Delhi",
-			"Count": 11488
+			"RejCount": 1697
 		},
 		{
 			"State": "Goa",
-			"Count": 1286
+			"RejCount": 156
 		},
 		{
 			"State": "Gujarat",
-			"Count": 73558
+			"RejCount": 10810
 		},
 		{
 			"State": "Haryana",
-			"Count": 9842
+			"RejCount": 2208
 		},
 		{
 			"State": "Himachal Pradesh",
-			"Count": 3220
+			"RejCount": 599
 		},
 		{
 			"State": "Jammu and Kashmir",
-			"Count": 33295
+			"RejCount": 6246
 		},
 		{
 			"State": "Jharkhand",
-			"Count": 16996
+			"RejCount": 3174
 		},
 		{
 			"State": "Karnataka",
-			"Count": 67647
+			"RejCount": 9813
 		},
 		{
 			"State": "Kerala",
-			"Count": 47864
+			"RejCount": 5446
 		},
 		{
 			"State": "Lakshadweep",
-			"Count": 103
+			"RejCount": 19
 		},
 		{
 			"State": "Madhya Pradesh",
-			"Count": 48075
+			"RejCount": 8828
 		},
 		{
 			"State": "Maharashtra",
-			"Count": 83684
+			"RejCount": 11529
 		},
 		{
 			"State": "Manipur",
-			"Count": 8237
+			"RejCount": 947
 		},
 		{
 			"State": "Meghalaya",
-			"Count": 17561
+			"RejCount": 825
 		},
 		{
 			"State": "Mizoram",
-			"Count": 4386
+			"RejCount": 603
 		},
 		{
 			"State": "Nagaland",
-			"Count": 2967
+			"RejCount": 347
 		},
 		{
 			"State": "Odisha",
-			"Count": 42105
+			"RejCount": 10240
 		},
 		{
 			"State": "Others",
-			"Count": 433
+			"RejCount": 28
 		},
 		{
 			"State": "Puducherry",
-			"Count": 768
+			"RejCount": 89
 		},
 		{
 			"State": "Punjab",
-			"Count": 25918
+			"RejCount": 3305
 		},
 		{
 			"State": "Rajasthan",
-			"Count": 72175
+			"RejCount": 9673
 		},
 		{
 			"State": "Sikkim",
-			"Count": 226
+			"RejCount": 37
 		},
 		{
 			"State": "Tamil Nadu",
-			"Count": 72046
+			"RejCount": 9761
 		},
 		{
 			"State": "Telangana",
-			"Count": 17706
+			"RejCount": 3272
 		},
 		{
 			"State": "Tripura",
-			"Count": 2402
+			"RejCount": 373
 		},
 		{
 			"State": "Uttar Pradesh",
-			"Count": 186166
+			"RejCount": 28380
 		},
 		{
 			"State": "Uttarakhand",
-			"Count": 3777
+			"RejCount": 603
 		},
 		{
 			"State": "West Bengal",
-			"Count": 80631
+			"RejCount": 16476
 		}
 	],
 	"time": {
-		"mr": 12093,
-		"hive": 12633,
-		"spark": 1232
+		"mr": 345,
+		"hive": 343,
+		"spark": 1074
 	}
 }
