@@ -43,7 +43,9 @@ include 'pages/nav.php';
                                 <script> 
                             $(document).ready(function() {
                                 //setInterval(updateLiveData, 2000);
+				//data= JSON.parse(data);
                                 setInterval(adddata, 2000);
+                                //setInterval(updateLiveData, 2000);
                                 function updateLiveData(){
                                     var result;
                                         $.ajax({
@@ -54,12 +56,16 @@ include 'pages/nav.php';
                                 })
                                 .done(function(data){
                                     //data= JSON.parse(data);
-                                    //console.log(data);
+                                    console.log(data);
                                     
                                     $("#livedata").html('New registration in '+data.State+'. Total registrations in '+data.State+' : '+data.Count+'');
                                     result = data;
                                     
-                                });
+                                })
+				.fail(function(jq,ts){
+					console.log(jq);
+					console.log(ts);
+				});
                                 return(result);
                                 }
 var canvas = document.getElementById('myChart');
@@ -174,28 +180,7 @@ var myLineChart = Chart.Line(canvas, {
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
+                   
                 </nav>
                 <p class="copyright pull-right">
                     &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Hadoop Team</a>, made with love for Persistent Systems Ltd.

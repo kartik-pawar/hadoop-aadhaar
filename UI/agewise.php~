@@ -52,10 +52,12 @@ include 'pages/nav.php';
                                 })
                                 .done(function(data){
                                    data= JSON.parse(data);
+$("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+
                                     $('#wait').hide();
                                     
                                      for (var key in data.data) {
-if(data.data[key].AgeRange==='NULL'){
+						if(data.data[key].AgeRange==='NULL'){
                                                 data.data[key].AgeRange = 'Others';
                                              }
 					     if(data.data[key].AgeRange==='60'){
@@ -114,10 +116,10 @@ if(data.data[key].AgeRange==='NULL'){
                                     <div class="stats">Processing time
                                     </div>
                                     <hr>
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-warning"></i> Hive took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-success"></i> Spark took <strong>89904</strong> ms to process
+                                    <div class="legend" id="time">
+                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> ms to process
                                     </div>
                                     
                                     

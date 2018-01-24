@@ -2,7 +2,7 @@
 
 header("Content-Type: application/json");
 
-    include 'api.php';
+    //include 'api.php';
 if(isset($_POST["func"]) && !empty($_POST["func"])){
 	switch ($_POST["func"]) {
 
