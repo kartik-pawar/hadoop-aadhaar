@@ -52,7 +52,7 @@ include 'pages/nav.php';
                                 })
                                 .done(function(data){
                                    data= JSON.parse(data);
-$("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+$("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong>s to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong>s to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong>s to process');
 
                                     $('#wait').hide();
                                     
@@ -117,9 +117,9 @@ $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+da
                                     </div>
                                     <hr>
                                     <div class="legend" id="time">
-                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> ms to process<br>
-                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> ms to process<br>
-                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> ms to process
+                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> s to process<br>
+                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> s to process<br>
+                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> s to process
                                     </div>
                                     
                                     

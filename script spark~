@@ -1,0 +1,5 @@
+
+
+tF = sc.textFile("s3://aadhaar-data/*.csv")
+pairs = tF.map(lambda x:(x.split(",")[2],int(x.split(",")[8])))
+pairs = pairs.groupByKey().mapValues(sum).collect()

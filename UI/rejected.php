@@ -54,7 +54,7 @@ include 'pages/nav.php';
                                     
                                     data= JSON.parse(data);
                                     console.log(data);
-                                    $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+                                    $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong>s to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong>s to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong>s to process');
 
                                     $('#wait').hide();
                                     

@@ -107,7 +107,7 @@ include 'pages/nav.php';
 
                                 $(".chart").hide();
                                 viewChart();
-                                $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+                                $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong>s to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong>s to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong>s to process');
 
 
                                     
@@ -135,9 +135,9 @@ include 'pages/nav.php';
                                     </div>
                                     <hr>
                                     <div class="legend" id="time">
-                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-warning"></i> Hive took <strong>899048</strong> ms to process<br>
-                                        <i class="fa fa-circle text-success"></i> Spark took <strong>89904</strong> ms to process
+                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> ms to process
                                     </div>
                                     
                                     

@@ -31,48 +31,52 @@ include 'pages/nav.php';
                         <div class="card">
 
                             <div class="header">
-                                <h4 class="title">Registrations for different age groups</h4>
-                                <p class="category"></p>
+                                <h4 class="title">Registrations for different age groups in <b><span id="stateName" class="text-info"></span></b> who have provided contact details.</h4>
+                                <p class="category">
+                                <div class="col-md-3">
+                                Choose another state : <select class="form-control input-md" id="chooseState" onchange="viewChart()"></select>
+                                
+                                </div>
+                                
+                                </p>
                             </div>
                             <div class="content">
                                 <!-- chart here -->
                                 <div class="col-md-12" align="center"> <img id="wait" class="" src="assets/img/waiting.gif"/></div>
+                               <div id="bleh"></div>
                                
-                            <canvas id="ageChart" width="400"></canvas>
+                            <!-- <canvas id="state0" width="400"></canvas>
+                            <canvas id="state1" width="400"></canvas>
+                            <canvas id="state2" width="400"></canvas> -->
                             <script> 
-                            var agegroup =[];
-                            var idcount =[];
+                            
                             $(function () {
                                 $('#wait').hide();
                                     $.ajax({
-                                    url: '../jsons/agewise.json',
+                                    url: '../jsons/misc.json',
                                     beforeSend: function(){
                                         $('#wait').show();
                                     }
                                 })
                                 .done(function(data){
                                    data= JSON.parse(data);
-$("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
-
                                     $('#wait').hide();
                                     
                                      for (var key in data.data) {
-						if(data.data[key].AgeRange==='NULL'){
-                                                data.data[key].AgeRange = 'Others';
-                                             }
-					     if(data.data[key].AgeRange==='60'){
-                                                data.data[key].AgeRange = '60+';
-                                             }
-                                             console.log(data.data[key].AgeRange);
-                                             console.log(data.data[key].Count);
-                                             
-                                             agegroup.push(data.data[key].AgeRange);
-                                             idcount.push(data.data[key].Count);
-                                        }
+                                        var agegroup =[];
+                                        var idcount =[];
+                                            
+                                            for(var key2 in data.data[key].agerange){
+                                             agegroup.push(data.data[key].agerange[key2].range);
+                                             idcount.push(data.data[key].agerange[key2].count);
+                                            }
+                                            //////////
+                                            $('#bleh').append('<canvas class="chart" id="state'+key+'" width="400"></canvas>');
+                                            $('#chooseState').append('<option value="state'+key+'">'+data.data[key].state+'</option>');
 
-                                var ctx = document.getElementById("ageChart").getContext('2d');
+                                            var ctx = document.getElementById("state"+key).getContext('2d');
 
-                                data = {
+                                datax = {
                                         datasets: [{
                                             data: idcount,
                                         
@@ -95,8 +99,16 @@ $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+da
                                     };
                            var myDoughnutChart = new Chart(ctx, {
                                 type: 'doughnut',
-                                data: data
+                                data: datax
                             });
+                                //////////
+                                             
+                                        }
+
+                                $(".chart").hide();
+                                viewChart();
+                                $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+
 
                                     
                                     })
@@ -106,7 +118,13 @@ $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+da
                                 })});
 
 
-
+                                function viewChart(){
+                                    
+                                    chartId = $('#chooseState').val();
+                                    $(".chart").hide();
+                                    $("#"+chartId).show();
+                                    $("#stateName").text($('#chooseState>option:selected').text());
+                                }
                             
                             </script>
 
@@ -117,9 +135,9 @@ $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+da
                                     </div>
                                     <hr>
                                     <div class="legend" id="time">
-                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> s to process<br>
-                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> s to process<br>
-                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> s to process
+                                        <i class="fa fa-circle text-info"></i> Hadoop took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-warning"></i> Hive took <strong></strong> ms to process<br>
+                                        <i class="fa fa-circle text-success"></i> Spark took <strong></strong> ms to process
                                     </div>
                                     
                                     

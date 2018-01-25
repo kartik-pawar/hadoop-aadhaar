@@ -31,7 +31,7 @@ include 'pages/nav.php';
                         <div class="card">
 
                             <div class="header">
-                                <h4 class="title">Registrations for all states</h4>
+                                <h4 class="title">Rejected Registrations for all states</h4>
                                 <p class="category"></p>
                             </div>
                             <div class="content">
@@ -41,24 +41,27 @@ include 'pages/nav.php';
                              <canvas id="myChart" width="400"></canvas>
                             <script> 
                             var states =[];
-                            var enrollcount =[];
+                            var rejectedcount =[];
                             $(function () {
                                 $('#wait').hide();
                                     $.ajax({
-                                    url: '../jsons/state.json',
+                                    url: '../jsons/RejCount.json',
                                     beforeSend: function(){
                                         $('#wait').show();
                                     }
                                 })
                                 .done(function(data){
-                                   data= JSON.parse(data);
+                                    
+                                    data= JSON.parse(data);
+                                    console.log(data);
+                                    $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong> ms to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong> ms to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong> ms to process');
+
                                     $('#wait').hide();
                                     
                                      for (var key in data.data) {
                                             
                                              states.push(data.data[key].State);
-                                             enrollcount.push(data.data[key].Count);
-                                             
+                                             rejectedcount.push(data.data[key].RejCount);
                                         }
 
                               
@@ -70,8 +73,8 @@ include 'pages/nav.php';
                                 data: {
                                     labels: states,
                                     datasets: [{
-                                        label: '# of Registered IDs',
-                                        data: enrollcount,
+                                        label: '# of Rejected IDs',
+                                        data: rejectedcount,
                                         backgroundColor: [
                                             'rgba(255, 99, 132, 0.2)',
                                             'rgba(255, 99, 132, 0.2)',
@@ -167,8 +170,7 @@ include 'pages/nav.php';
                                 }
                             });
 
-                             $("#time").html('<i class="fa fa-circle text-info"></i> Hadoop took <strong>'+data.time.mr+'</strong>s to process<br><i class="fa fa-circle text-warning"></i> Hive took <strong>'+data.time.hive+'</strong>s to process<br> <i class="fa fa-circle text-success"></i> Spark took <strong>'+data.time.spark+'</strong>s to process');
-
+                            
                                     
                                     })
                                 .fail(function() {
